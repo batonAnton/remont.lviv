@@ -143,15 +143,15 @@ div{
 }
 
 .row_4{
-	display: block;
+	
 }
 .block_all{
 	width: 250px;
-	/*margin: 5px 35px 30px;*/
+	margin: 5px 35px 30px;
     /*margin: auto;*/
-    margin-left: 40px;
+   /* margin-left: 40px;
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;*/
     padding: 20px 40px 40px 40px;
     min-height: 275px;
     display: block;
@@ -266,11 +266,14 @@ div{
 .cells{
 	width: 250px;
 	margin-bottom: 50px;
-	margin-left: 40px;
+	margin: 5px 35px 30px;
 	border-radius: 5px;
     box-shadow: 0px 0px 42.14px 0.86px rgba(0, 0, 0, 0.23);
     opacity: 0.98;
     justify-content: baseline;
+}
+.cells_content {
+	margin: auto;
 }
 
 .row6_p{
