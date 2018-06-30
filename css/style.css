@@ -38,25 +38,21 @@ div{
 }
 
 
-.callback{
-	/*text-align: center;*/
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
 
-}
 
 .number{
 	color: black;
 }
-
+	
 
 
 /*row 2*/
 .row_2{
-	/*height: 300px;*/
 	background-color: white;
 	padding: 50px;
+}
+.email{
+	margin-left: 100px;
 }
 
  .row_2Ico{
@@ -68,7 +64,7 @@ div{
 }
 .row_2  p{
 	color: black;
-	font-size: 1.6em;
+	font-size: 1.3em;
 	font-weight: 800;
 }
 .fa-at, .fa-phone{
@@ -85,18 +81,19 @@ div{
 	color: #D41C1E;
 }
 .row_2el{
-	margin:-20px -90px;
+	display: block;
 }
-.row_2 .email{
-	margin-left: auto;
-    margin-right: auto;
-    display: block;
+ .emailP{
+	display: block;
+	width: 50px;
 }
-.row_2 .email a{}
 .logo{
 	width: 150px;
 	margin: auto;
 }
+
+
+
 
 /*section*/
 .section_3{
@@ -115,8 +112,8 @@ div{
     font-weight: 800;
     line-height: 1.2;
     color: #FFFAF4;
-    width: 220px;
-    text-transform: uppercase;
+/*    width: 220px;
+*/    text-transform: uppercase;
     text-align: left;
     letter-spacing: 3px;
 }
@@ -239,15 +236,71 @@ div{
     font-weight: 800;
     letter-spacing: 1.2px;
 }
-.btn-banner{
+a .moreA{
     width: 213px;
     height: 50px;
-    background: #D41C1E;
+    background: #ffff;
     border-radius: 50px;
-    border: none;
-    border-bottom: 2px solid rgb(243, 112, 33);
-    margin-top: 50px;
+    border: 2px solid #f44;
+/*    border-bottom: 2px solid rgb(243, 112, 33);
+*/    margin-top: 50px;
 }
+
+/*btn hover*/
+a.moreA:link, a.moreA:visited {
+  position: relative;
+    margin: auto;
+    display: block;
+    width: 213px;
+    height: 50px;
+    top: 20px;
+    border-radius: 50px;
+    padding: 10px 5px;
+    border: 2px solid #f44;
+    background: rgba(255, 255, 255, 0.2);
+    color: #f44;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    /* text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2); */
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 10;
+}
+a.moreA:link:after, a.moreA:visited:after {
+  content: "";
+  position: absolute;
+  background: none repeat scroll 0 0 #f44;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+a.moreA:link:hover, a.moreA:visited:hover {
+  color: #fff;
+  text-shadow: none;
+}
+a.moreA:link:hover:after, a.moreA:visited:hover:after {
+  height: 420%;
+}
+
+a.moreA:after {
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+
+
+
 /*section_5*/
 
 .section_5{
@@ -275,7 +328,7 @@ div{
 }
 
 .row6_p{
-	margin-top: 40px;
+	margin:auto;
 	font-size: 17px;
 }
 
@@ -339,7 +392,7 @@ footer{
 .cells_foot h1{
 	font-size: 2em;
 	color: #D41C1E;
-	text-align: center;
+	text-align: left;
 }
 
 .div_3 a{
@@ -348,17 +401,22 @@ footer{
 	display: block;
 	color: #D41C1E;
 }
-.row_3el p{
+footer p{
 	width: 320px;
 	font-size: 1.8rem;
 	color: white;
 }
 
-footer .email{
-	margin-left: auto;
-    margin-right: auto;
+footer .emailP{
+	width: 50px;
     display: block;
 }
-footer .number{
+footer .row_2el{
+	margin-bottom: 10px;
+}
+footer .email{
+	margin-left: 0px;
+}
+footer p{
 	color: white;
 }
