@@ -106,6 +106,8 @@ div{
 }
 .banner{
 	top: 120px;
+	position:relative;
+	margin-left:-100px;
 }
 .banner h1{
     font-size: 4em;
